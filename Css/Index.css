@@ -1,0 +1,46 @@
+
+.star{
+    width: 35px;
+    height:35px;
+}
+
+body{
+    
+    background-image: url("../Image/estadio2.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    
+}
+
+.fondo
+{
+    background-image: url("../Image/cesped.jpg");
+    font-family:"Mi_Fuente";
+    
+}
+
+.fondoLetra{
+    /*background-color: black;
+    padding: 5px;
+    border-radius: 8px;*/
+    font-weight: bold;
+}
+
+.transparencia{
+    background-color:rgba(0, 0, 0, 0.66);
+    min-height: 100vh;
+    padding-left: 10px;
+    padding-top: 10px;
+    border-radius: 5px;
+}
+
+/*-------------estilos agregados por mi---------------------*/
+@font-face {
+    font-family: "Mi_Fuente";
+    src: url("../Font/Rushtard\ Brush.otf");
+}
+
+h1{
+    font-size: 100px;
+}

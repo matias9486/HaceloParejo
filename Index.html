@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hacelo Parejo ⚽</title>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>  -->
+    <script src="Js/Index.js"></script>
+     <!-- Bootstrap CSS -->
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+     <link rel="stylesheet" href="Css/Index.css">
+</head>
+
+<body class=" text-white col-12">            
+  <div class="fondo text-center">
+    <h1>Hacelo parejo</h1>
+  </div>
+
+  <div class="container transparencia">      
+    <div id="msj" class="col-6 col-sm-3"></div>
+
+    <form class="col-12 col-sm-12">
+        <div class="mb-3 col-8 col-sm-4 ">
+          <label class="fondoLetra" for="nombre" class="form-label">Nombre:</label>
+          <input type="text" class="form-control" id="nombre" placeholder="ponga nombre" >                              
+        </div>
+
+        
+        <div class="mb-3">
+          <label class="fondoLetra" for="puntuacion" class="form-label">Puntuación:</label>
+          
+          <div>
+            <span id="estrellitas"></span>
+        </div>
+        </div>
+        
+        <button type="button" class="btn btn-primary" onclick="agregar();" >Agregar</button>
+      </form>
+
+      <div class="col-6 col-md-4 mt-3">
+        <table class="table table-striped table-dark table-sm">
+            <thead>
+              <tr>
+                <th scope="col">Nombre</th>
+                <th scope="col">Puntos</th>            
+              </tr>
+            </thead>
+            <tbody id="personas">                  
+            </tbody>
+          </table>
+      </div>      
+      
+    <button type="button" class="btn btn-primary" onclick="armarEquiposAlAzar();">Equipos al azar</button>    
+    <button type="button" class="btn btn-primary" onclick="armarEquiposParejos();">Equipos parejos</button>
+    <button type="button" class="btn btn-primary" onclick="limpiar();">Limpiar Lista</button>
+
+    <div class="row mt-3">
+
+        <div class="col-6 col-sm-4 d-inline-block">
+            <h3>Equipo 1</h3>
+            <table class="table table-striped table-dark table-sm">
+                <thead>
+                  <tr>
+                    <th scope="col">Nombre</th>
+                    <th scope="col">Puntos</th>            
+                  </tr>
+                </thead>
+                <tbody id="equipoA">                  
+                </tbody>
+                <tfoot id="totalA">                  
+                </tfoot>
+              </table>
+        </div>      
+
+          <div class="col-6 col-sm-4 d-inline-block ">
+            <h3>Equipo 2</h3>
+            <table class="table table-striped table-dark table-sm">
+                <thead>
+                  <tr>
+                    <th scope="col">Nombre</th>
+                    <th scope="col">Puntos</th>            
+                  </tr>
+                </thead>
+                <tbody id="equipoB">                  
+                </tbody>
+                <tfoot id="totalB">                  
+                </tfoot>
+              </table>
+          </div>      
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+</div>
+</body>
+</html>
